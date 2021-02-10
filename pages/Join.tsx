@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ui/Button/Button";
+import { Button, RedButton } from "../ui/Button/Button";
 import { InputWithLabel } from "../ui/Input/InputWithLabel";
 
 export default class Join extends React.Component {
@@ -12,7 +12,7 @@ export default class Join extends React.Component {
 
         <InputWithLabel label="Username" placeholder="Dream" />
         <div className="flex justify-end mt-4">
-          <Button text="Send" />
+          <RedButton text="Send" />
         </div>
       </div>
     );

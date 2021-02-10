@@ -1,4 +1,4 @@
-import { Title } from "../Title/Title";
+import { ClickableTitle } from "../Title/Title";
 import { MarginSpacer } from "../Spacing/MarginSpacer";
 import { NavButtonContainer } from "../Spacing/NavButtonContainer";
 import { NavButton } from "../Button/NavButton";
@@ -8,8 +8,8 @@ export function Navbar() {
   const router = useRouter();
 
   return (
-    <MarginSpacer spacing={4} inline={true} fullWidth={true}>
-      <Title
+    <MarginSpacer spacing={4} inline={true}>
+      <ClickableTitle
         size="text-lg"
         text="Rapport Realms"
         onClick={() => {
@@ -18,7 +18,18 @@ export function Navbar() {
       />
 
       <NavButtonContainer position="right">
-        <NavButton text="Court" onClick={() => {}} />
+        <NavButton
+          text="Rules"
+          onClick={() => {
+            router.push("rules");
+          }}
+        />
+        <NavButton
+          text="Court"
+          onClick={() => {
+            router.push("Court");
+          }}
+        />
         <NavButton
           text="Jailed"
           onClick={() => {

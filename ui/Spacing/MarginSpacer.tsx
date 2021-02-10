@@ -4,16 +4,11 @@ type props = {
   spacing: number;
   children: ReactChild[] | ReactChild;
   inline: boolean;
-  fullWidth?: boolean | false;
 };
 
-export function MarginSpacer({ spacing, children, inline, fullWidth }: props) {
+export function MarginSpacer({ spacing, children, inline }: props) {
   return (
-    <div
-      className={`flex m-${spacing} ${inline && `inline-flex`} ${
-        fullWidth && "w-full"
-      }`}
-    >
+    <div className={`flex m-${spacing} ${inline && `inline-flex`}`}>
       {children}
     </div>
   );
