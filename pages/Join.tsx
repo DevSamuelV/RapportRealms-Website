@@ -12,7 +12,7 @@ export default class Join extends React.Component {
 
         <InputWithLabel label="Username" placeholder="Dream" />
         <div className="flex justify-end mt-4">
-          <RedButton text="Send" />
+          {/* <RedButton text="Send" /> */}
         </div>
       </div>
     );

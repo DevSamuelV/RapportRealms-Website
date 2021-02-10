@@ -1,6 +1,5 @@
 import React from "react";
 import { Rule } from "../ui/rules/Rules";
-import { Title } from "../ui/Title/Title";
 
 export default class Rules extends React.Component {
   render() {
@@ -18,13 +17,13 @@ export default class Rules extends React.Component {
         <div className="flex flex-col place-self-center mt-9 text-left ">
           <Rule.title size="text-xl" text="1. No Unconsented PvP" />
           <Rule.desc
-            text="You Are Not Allowed to kill anyone unless they give you consent."
+            text="You Are Not Allowed to kill anyone inside there base unless they give you consent."
             size="text-lg"
           />
 
           <Rule.title size="text-xl" text="2. Self Defence" />
           <Rule.desc
-            text="You Are Allowed to Defend your self only if the player is trying to harm you."
+            text="You Are Allowed to Defend your self only if the player is trying to harm you or someone else."
             size="text-lg"
           />
 
@@ -39,6 +38,18 @@ export default class Rules extends React.Component {
             text="if a base has a book of law that book is the law of the area of that base (yes I know the grammar is trash) ."
             size="text-lg"
           />
+
+          <Rule.title size="text-xl" text="5. No Griefing" />
+          <Rule.desc
+            text="You Are Not Allowed to cause any destruction at all to a base that you don't own."
+            size="text-lg"
+          />
+
+          {/* <Rule.title size="text-xl" text="5. Trespassing" />
+          <Rule.desc
+            text="You Are Now Allowed to Trespassing on privately declared property unless you have permission other wise you will be jailed for 5min."
+            size="text-lg"
+          /> */}
         </div>
       </div>
     );
