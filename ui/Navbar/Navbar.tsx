@@ -24,7 +24,7 @@ export function Navbar() {
             router.push("rules");
           }}
         />
-        <NavButton
+        {/* <NavButton
           text="Court"
           onClick={() => {
             router.push("Court");
@@ -35,7 +35,7 @@ export function Navbar() {
           onClick={() => {
             router.push("Jailed");
           }}
-        />
+        /> */}
       </NavButtonContainer>
     </MarginSpacer>
   );
