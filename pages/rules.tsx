@@ -2,6 +2,8 @@ import React from "react";
 import { Rule } from "../ui/rules/Rules";
 
 export default class Rules extends React.Component {
+  private updatedDate = "2/11/21";
+
   render() {
     return (
       <div className="flex flex-col">
@@ -10,7 +12,7 @@ export default class Rules extends React.Component {
         >
           Rules
           <span className="ml-4 flex-shrink-0 inline-block align-middle px-3 py-1 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full">
-            Updated: 2/10/21
+            Updated: {this.updatedDate}
           </span>
         </h2>
 
@@ -42,6 +44,12 @@ export default class Rules extends React.Component {
           <Rule.title size="text-xl" text="5. No Griefing" />
           <Rule.desc
             text="You Are Not Allowed to cause any destruction at all to a base that you don't own."
+            size="text-lg"
+          />
+
+          <Rule.title size="text-xl" text="6. No Cheat Clients" />
+          <Rule.desc
+            text="You Are Not Allowed to use Any form of Cheat's Or Cheat Clients."
             size="text-lg"
           />
 
