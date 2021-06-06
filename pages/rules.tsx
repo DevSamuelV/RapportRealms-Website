@@ -19,37 +19,37 @@ export default class Rules extends React.Component {
 				<div className="flex flex-col place-self-center mt-9 text-left ">
 					<Rule.title size="text-xl" text="1. No Unconsented PvP" />
 					<Rule.desc
-						text="You Are Not Allowed to kill anyone inside there base unless they give you consent."
+						text="You are not allowed to kill anyone inside there base unless they give you consent."
 						size="text-lg"
 					/>
 
 					<Rule.title size="text-xl" text="2. Self Defense" />
 					<Rule.desc
-						text="You Are Allowed to Defend your self only if the player is trying to harm you or someone else."
+						text="You are allowed to defend your self only if the player is trying to harm you or someone else."
 						size="text-lg"
 					/>
 
 					<Rule.title size="text-xl" text="3. No Theft" />
 					<Rule.desc
-						text="You Are Not Allowed to Steal anything that belongs to a player or faction."
+						text="You are not allowed to steal anything that belongs to a player or faction."
 						size="text-lg"
 					/>
 
 					<Rule.title size="text-xl" text="4. Municipality Jurisdiction" />
 					<Rule.desc
-						text="any base can enforce it's own set of rules by placing a book a the entreance of the base containing the rules."
+						text="any base can enforce it's own set of rules, by placing a book a the entrance of the base containing the rules."
 						size="text-lg"
 					/>
 
 					<Rule.title size="text-xl" text="5. No Griefing" />
 					<Rule.desc
-						text="You Are Not Allowed to cause any destruction at all to a base that you don't own."
+						text="You are not allowed to cause any destruction at all to a base that you don't own."
 						size="text-lg"
 					/>
 
 					<Rule.title size="text-xl" text="6. No Cheat Clients" />
 					<Rule.desc
-						text="You Are Not Allowed to use Any form of Cheat's Or Cheat Clients."
+						text="You are not allowed to use any form of cheat's or cheat clients."
 						size="text-lg"
 					/>
 
