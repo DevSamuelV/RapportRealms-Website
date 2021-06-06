@@ -1,57 +1,59 @@
-import { BigRedButton } from "../ui/Button/BigButton";
-import { useRouter } from "next/router";
-import { Title } from "../ui/Title/Title";
-import { Button } from "../ui/Button/Button";
+import React from "react";
+import { Rule } from "../ui/rules/Rules";
 
-export default function Home() {
-  const router = useRouter();
+export default class index extends React.Component {
+	private updatedDate = "6/6/21";
 
-  const Join = async () => {
-    router.push("Join");
-  };
+	render() {
+		return (
+			<div className="flex flex-col">
+				<h2
+					className={`w-max select-none text-center text-5xl font-extrabold text-gray-900`}
+				>
+					Rules
+					<span className="ml-4 flex-shrink-0 inline-block align-middle px-3 py-1 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full">
+						Updated: {this.updatedDate}
+					</span>
+				</h2>
 
-  return (
-    <div className="w-full">
-      <div className="rounded-xl ml-4 mr-4 p-2 text-white bg-gray-900">
-        <h2 className="font-extrabold text-6xl text-center">Rapport Realms</h2>
-        <h5 className="mt-3 font-semibold text-2xl text-center">
-          Join The Rapport Realms Today
-        </h5>
+				<div className="flex flex-col place-self-center mt-9 text-left ">
+					<Rule.title size="text-xl" text="1. No Unconsented PvP" />
+					<Rule.desc
+						text="You are not allowed to kill anyone inside there base unless they give you consent."
+						size="text-lg"
+					/>
 
-        <div className="mt-3 flex justify-center">
-          <BigRedButton text="Join" onClick={() => Join()} />
-        </div>
-      </div>
+					<Rule.title size="text-xl" text="2. Self Defense" />
+					<Rule.desc
+						text="You are allowed to defend your self only if the player is trying to harm you or someone else."
+						size="text-lg"
+					/>
 
-      {/* <div className="flex flex-row">
-        <div className="p-3 ml-5 mt-5 float-left bg-white shadow-md rounded-2xl w-full">
-          <Title size="text-3xl" center={true} text="Jailed" />
+					<Rule.title size="text-xl" text="3. No Theft" />
+					<Rule.desc
+						text="You are not allowed to steal anything that belongs to a player or faction."
+						size="text-lg"
+					/>
 
-          <div className="flex justify-center">
-            <img
-              className="m-2 h-20 w-20 rounded-xl"
-              src="https://lh3.googleusercontent.com/proxy/KuEXT8v-QgBl_TuxSYvK5VdA_-iTy33QH3_F4kqa8BsSSvuGfzTi8pFbryHc5uYRAoDCjyzO2AJNORonUo-lxsVvxkwMfs0x4DIRKi4YQ-sQ"
-              alt="Jailed Users"
-            />
-          </div>
-        </div>
+					<Rule.title size="text-xl" text="4. Municipality Jurisdiction" />
+					<Rule.desc
+						text="any base can enforce it's own set of rules, by placing a book a the entrance of the base containing the rules."
+						size="text-lg"
+					/>
 
-        <div className="p-3 ml-5 mt-5 float-right bg-white shadow-md rounded-2xl w-full">
-          <Title size="text-3xl" center={true} text="News" />
+					<Rule.title size="text-xl" text="5. No Griefing" />
+					<Rule.desc
+						text="You are not allowed to cause any destruction at all to a base that you don't own."
+						size="text-lg"
+					/>
 
-          <div className="flex justify-center">
-            <img
-              className="m-2 h-20 w-20 rounded-xl"
-              src="https://pbs.twimg.com/profile_images/1272909264366043140/cpisl8tB.jpg"
-              alt="Mc News"
-            />
-          </div>
-
-          <div className="mt-3 flex justify-center">
-            <Button disabled={true} text="Check out the News" onClick={null} />
-          </div>
-        </div>
-      </div> */}
-    </div>
-  );
+					<Rule.title size="text-xl" text="6. No Cheat Clients" />
+					<Rule.desc
+						text="You are not allowed to use any form of cheat's or cheat clients."
+						size="text-lg"
+					/>
+				</div>
+			</div>
+		);
+	}
 }
